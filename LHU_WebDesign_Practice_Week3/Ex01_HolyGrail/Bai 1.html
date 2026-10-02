@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Holy Grail Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        .holy-grail {
+            display: grid;
+            min-height: 100vh;
+            grid-template-areas: 
+                "header header header"
+                "left-sidebar main right-sidebar"
+                "footer footer footer";
+            /* Định nghĩa kích thước các hàng và cột */
+            grid-template-rows: 80px 1fr 60px;
+            grid-template-columns: 200px 1fr 200px;
+            gap: 15px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+
+        .left-sidebar {
+            grid-area: left-sidebar;
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .right-sidebar {
+            grid-area: right-sidebar;
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="holy-grail">
+        <header>Header (Trên cùng)</header>
+        
+        <aside class="left-sidebar">
+            <h3>Sidebar Trái</h3>
+            <p>Menu điều hướng...</p>
+        </aside>
+
+        <main>
+            <h2>Main Content (Nội dung chính)</h2>
+            <p>Đây là nội dung chính của trang web. Bạn có thể viết thêm nhiều nội dung dài ra tùy ý, bố cục Grid sẽ tự động co giãn cân đối mà không làm mất tỷ lệ của các Sidebar hai bên[cite: 8].</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </main>
+
+        <aside class="right-sidebar">
+            <h3>Sidebar Phải</h3>
+            <p>Khu vực quảng cáo...</p>
+        </aside>
+
+        <footer>Footer (Dưới cùng)</footer>
+    </div>
+
+</body>
+</html>

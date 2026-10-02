@@ -1,0 +1,1 @@
+Thiết kế một Header gồm: Logo (bên trái), Menu chính (chính giữa), và các nút Action như "Đăng nhập/Đăng ký" (bên phải). Sử dụng Flexbox và thuộc tính justify-content: space-between để phân bổ 3 nhóm phần tử. Menu chính phải có tính năng thả xuống (Dropdown) khi di chuột vào, các mục trong Dropdown cũng phải được dàn trang bằng Flexbox.

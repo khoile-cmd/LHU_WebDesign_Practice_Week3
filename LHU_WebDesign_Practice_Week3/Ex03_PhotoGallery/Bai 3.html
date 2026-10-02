@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lưới Ảnh Tự Do - Masonry Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            grid-auto-rows: 150px;
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+            z-index: 2;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .item-1 {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .item-2 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        .item-3 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .item-4 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .item-5 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .item-6 {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .item-7 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        .item-8 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thư Viện Ảnh (Pinterest Style)</h1>
+
+    <div class="gallery-container">
+        <div class="gallery-item item-1">
+            <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/hinh_anh_da_lat_523379428a.jpg" alt="Ảnh 1">
+        </div>
+        <div class="gallery-item item-2">
+            <img src="https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2025/1/19/1008aad6c4c9493b8047f15e9d133ccf" alt="Ảnh 2">
+        </div>
+
+        <div class="gallery-item item-3">
+            <img src="https://image.vietgoing.com/article/large/8-diem-du-lich-chup-hinh-dep-nhat-o-da-lat.jpg" alt="Ảnh 3">
+        </div>
+        <div class="gallery-item item-4">
+            <img src="https://picsum.photos/id/1043/800/400" alt="Ảnh 4">
+        </div>
+        <div class="gallery-item item-5">
+            <img src="https://picsum.photos/id/1050/400/400" alt="Ảnh 5">
+        </div>
+        <div class="gallery-item item-6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWYCVg0iY6_Pk2NeBzITodDdbfEN_XgxnNw3-KiKiAw&s=10" alt="Ảnh 6">
+        </div>
+        <div class="gallery-item item-7">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlyViPgtoherHPv2XWHF9BaxBAgVKzWX4zrWjLiZtsOw&s=10" alt="Ảnh 7">
+        </div>
+        <div class="gallery-item item-8">
+            <img src="https://greenecodalat.com.vn/wp-content/uploads/2023/12/Hinh-anh-Da-Lat-voi-quat-gio-1.jpg" alt="Ảnh 8">
+        </div>
+    </div>
+
+</body>
+</html>

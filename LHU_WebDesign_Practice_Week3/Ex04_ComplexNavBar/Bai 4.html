@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Complex Nav Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 8px 12px;
+            display: block;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #3498db;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            border-radius: 6px;
+            list-style: none;
+            min-width: 180px;
+            display: none;
+            flex-direction: column;
+            padding: 8px 0;
+        }
+
+        .nav-item:hover .dropdown {
+            display: flex;
+        }
+
+        .dropdown li a {
+            padding: 10px 16px;
+            text-decoration: none;
+            color: #333;
+            display: block;
+            font-size: 14px;
+        }
+
+        .dropdown li a:hover {
+            background-color: #f8f9fa;
+            color: #3498db;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .btn-login {
+            color: #3498db;
+            border: 1px solid #3498db;
+            background: transparent;
+        }
+
+        .btn-login:hover {
+            background-color: #f0f8ff;
+        }
+
+        .btn-register {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn-register:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">BrandLogo</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Trang chủ</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Dịch vụ ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Thiết kế Web</a></li>
+                        <li><a href="#">Lập trình App</a></li>
+                        <li><a href="#">Marketing Online</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Giới thiệu</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+            </ul>
+
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-login">Đăng nhập</a>
+                <a href="#" class="btn btn-register">Đăng ký</a>
+            </div>
+        </nav>
+    </header>
+
+</body>
+</html>

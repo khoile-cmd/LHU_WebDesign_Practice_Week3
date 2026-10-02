@@ -1,0 +1,1 @@
+Xây dựng giao diện trang chi tiết sản phẩm thương mại điện tử. Kết hợp CSS Grid cho bố cục lớn: Ảnh sản phẩm bên trái (60%) và Thông tin mua hàng bên phải (40%). Sử dụng Flexbox bên trong phần thông tin để dàn hàng các lựa chọn: Size (S, M, L), Màu sắc (các ô tròn màu), và bộ nút "Tăng/Giảm số lượng".

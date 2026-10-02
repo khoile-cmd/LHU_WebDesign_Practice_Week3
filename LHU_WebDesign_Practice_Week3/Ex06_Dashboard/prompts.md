@@ -1,0 +1,1 @@
+Thiết kế một giao diện Dashboard đơn giản gồm: Sidebar cố định bên trái (Fixed Sidebar) không bị mất khi cuộn trang, và vùng nội dung cuộn bên phải. Vùng nội dung bên phải sử dụng CSS Grid để hiển thị 4 thẻ thống kê (Stats Cards) ở trên cùng, bên dưới là một bảng dữ liệu (Data Table) chiếm toàn bộ chiều ngang.

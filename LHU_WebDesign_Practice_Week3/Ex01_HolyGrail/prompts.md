@@ -1,0 +1,1 @@
+Xây dựng cấu trúc website kinh điển gồm 5 phần: Header (trên cùng), Sidebar trái (Menu), Main Content (Nội dung chính), Sidebar phải (Quảng cáo) và Footer (dưới cùng). Sử dụng CSS Grid với thuộc tính grid-template-areas để định vị. Tạo nội dung giả (Placeholder) ở Main Content sao cho khi nội dung dài ra, hai Sidebar vẫn giữ nguyên tỷ lệ chiều cao.

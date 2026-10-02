@@ -1,0 +1,1 @@
+Tạo một khu vực gồm 3 bảng giá (Basic, Pro, Enterprise) nằm ngang hàng nhau bằng Flexbox. Căn giữa các thành phần bên trong mỗi bảng giá sao cho nút "Mua ngay" luôn nằm sát đáy bảng giá dù nội dung mô tả dài ngắn khác nhau. Thêm hiệu ứng khi di chuột (hover) vào bảng giá sẽ phóng to nhẹ (transform: scale) và thay đổi màu sắc nổi bật.

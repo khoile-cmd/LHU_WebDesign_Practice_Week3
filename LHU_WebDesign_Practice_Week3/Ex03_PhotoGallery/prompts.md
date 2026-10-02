@@ -1,0 +1,1 @@
+Xây dựng một thư viện ảnh (Photo Gallery) với ít nhất 8 ảnh có kích thước khác nhau theo kiểu Pinterest hoặc Instagram Explore. Sử dụng CSS Grid với thuộc tính grid-column: span và grid-row: span để tạo các ô ảnh to nhỏ đan xen nhau. Đảm bảo khoảng cách giữa các ảnh (gap) luôn đồng nhất là 15px.

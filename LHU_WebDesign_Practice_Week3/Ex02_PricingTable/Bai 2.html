@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng Giá Dịch Vụ - Flexbox Cards</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .pricing-container {
+            display: flex;
+            gap: 30px;
+            width: 90%;
+            max-width: 1100px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .pricing-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: scale(1.05); /* Phóng to nhẹ */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            border: 2px solid #3498db;
+        }
+
+        .pricing-card h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 24px;
+        }
+
+        .price {
+            font-size: 32px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .pricing-card ul {
+            padding-left: 20px;
+            color: #666;
+            line-height: 1.6;
+            flex-grow: 1; /* Giúp đẩy nội dung mở rộng đều */
+        }
+
+        .pricing-card li {
+            margin-bottom: 8px;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+            margin-top: 20px;
+        }
+
+        .btn-buy:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <div>
+                <h2>Basic</h2>
+                <div class="price">99.000đ</div>
+                <ul>
+                    <li>Tính năng cơ bản</li>
+                    <li>Hỗ trợ qua Email</li>
+                    <li>Dung lượng 5GB</li>
+                </ul>
+            </div>
+            <a href="#" class="btn-buy">Mua ngay</a>
+        </div>
+
+        <div class="pricing-card">
+            <div>
+                <h2>Pro</h2>
+                <div class="price">299.000đ</div>
+                <ul>
+                    <li>Tất cả tính năng Basic</li>
+                    <li>Hỗ trợ trực tuyến 24/7</li>
+                    <li>Dung lượng 50GB</li>
+                    <li>Báo cáo chi tiết</li>
+                </ul>
+            </div>
+            <a href="#" class="btn-buy">Mua ngay</a>
+        </div>
+
+        <div class="pricing-card">
+            <div>
+                <h2>Enterprise</h2>
+                <div class="price">599.000đ</div>
+                <ul>
+                    <li>Tất cả tính năng cao cấp</li>
+                    <li>Quản lý riêng chuyên trách</li>
+                    <li>Dung lượng không giới hạn</li>
+                    <li>Bảo mật nâng cao</li>
+                </ul>
+            </div>
+            <a href="#" class="btn-buy">Mua ngay</a>
+        </div>
+    </div>
+
+</body>
+</html>
